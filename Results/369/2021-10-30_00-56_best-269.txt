@@ -1,0 +1,34 @@
+Found 1936 files belonging to 1 classes.
+Found 71 files belonging to 3 classes.
+2021-10-30 00:56:13.376014: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents 
+of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+metal_nut:   0%|                                                                                                                                                                                                | 0/1200000 [00:00<?, ?it/s]x265 [info]: HEVC encoder version 3.2+35-acc5d16999e2
+x265 [info]: build info [Windows][GCC 9.2.1][64 bit] 8bit+10bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x265 [info]: Main profile, Level-3.1 (Main tier)
+x265 [info]: Thread pool created using 20 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 4 / wpp(14 rows)
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip signhide tmvp b-intra
+x265 [info]: tools: strong-intra-smoothing lslices=5 deblock sao
+metal_nut:   0%|                                                                                                                                                                                    | 8/1200000 [00:11<269:56:02,  1.23it/s]WARNING:tensorflow:From C:\Users\pesqu\Documents\GAN\GAN_env\lib\site-packages\tensorflow\python\training\moving_averages.py:457: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+metal_nut: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200000/1200000 [39:49:57<00:00,  8.37it/s, AUC=99.7%, BalAcc=97.8%, BestAUC=100.0%]
+x265 [info]: frame I:     49, Avg QP:23.37  kb/s: 28119.36
+x265 [info]: frame P:  10579, Avg QP:29.35  kb/s: 1014.71
+x265 [info]: frame B:   1373, Avg QP:35.85  kb/s: 18.17
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 90.9% 7.2% 0.1% 1.4% 0.3%
+
+encoded 12001 frames in 143421.32s (0.08 fps), 1011.37 kb/s, Avg QP:30.07
+metal_nut: AUC=1.0, BalAcc=1.0
